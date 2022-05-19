@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="https://plamendobrev.com/mstile-70x70.png"/>
+            <square150x150logo src="https://plamendobrev.com/mstile-150x150.png"/>
+            <square310x310logo src="https://plamendobrev.com/mstile-310x310.png"/>
+            <wide310x150logo src="https://plamendobrev.com/mstile-310x150.png"/>
+            <TileColor>#D3B1D7</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
