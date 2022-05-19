@@ -1,0 +1,132 @@
+#bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#bar:before {
+    background: #E6E6E6;
+    border-radius: 0px 16px 0px 0px;
+    content: "";
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 16px;
+    z-index: 1;
+}
+
+#bar:after {
+    background: #E6E6E6;
+    border-radius: 16px 0px 0px 0px;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 16px;
+    z-index: 1;
+}
+
+#bar-content {
+    background: #FFFFFF;
+    border-radius: 0px 0px 16px 16px;
+    margin: 0px 16px;
+    padding: 12px;
+}
+
+#bar-content:before {
+    background: #FFFFFF;
+    content: "";
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 16px;
+}
+
+#bar-content:after {
+    background: #FFFFFF;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 16px;
+}
+
+#bar-content a {
+    display: table;
+    margin: auto;
+    outline: none;
+    text-decoration: none;
+    transition: transform 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#bar-content a:focus-visible {
+    transform: scale(1.05);
+}
+
+#bar-content a:hover {
+    transform: scale(1.05);
+}
+
+#bar-content a span {
+    display: inline-block;
+    height: 30px;
+    overflow: hidden;
+    width: 97px;
+}
+
+#bar-content a span img {
+    height: 36px;
+    width: auto;
+}
+
+#bar-content a span:nth-child(1) img {
+    -webkit-clip-path: inset(0% 50% 0% 0%);
+    clip-path: inset(0% 50% 0% 0%);
+}
+
+#bar-content a span:nth-child(2) img {
+    -webkit-clip-path: inset(0% 0% 0% 50%);
+    clip-path: inset(0% 0% 0% 50%);
+    left: -97px;
+    position: relative;
+}
+
+#bar-border {
+    background: #E6E6E6;
+    height: 1px;
+    margin: 0px 32px;
+}
+
+#bar-border:before {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+    border-radius: 0px 0px 0px 16px;
+    bottom: 0px;
+    content: "";
+    height: 16px;
+    left: 15px;
+    position: absolute;
+    width: 16px;
+}
+
+#bar-border:after {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+    border-radius: 0px 0px 16px 0px;
+    bottom: 0px;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    width: 16px;
+}

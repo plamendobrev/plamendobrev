@@ -1,0 +1,97 @@
+html {
+    min-height: 100%;
+    background: #E6E6E6;
+}
+
+body {
+    margin: 0px;
+    min-width: 256px;
+}
+
+#spanish-stories-article article section p:nth-child(even) {
+    color: #000000;
+    text-indent: 0px;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 15px 16px 16px 16px;
+}
+
+main article + article, main article section + section {
+    margin-top: 16px;
+}
+
+main article section {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+main article section > *:nth-child(1) {
+    margin-top: 0px;
+}
+
+main article section > *:last-child {
+    margin-bottom: 0px;
+}
+
+main article section a, main article section figure img, main article section h3, main article section p {
+    font-family: "Besley";
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    word-break: break-word;
+}
+
+main article section a, main article section figure img, main article section p {
+    font-size: 18px;
+}
+
+main article section a, main article section h3, main article section p {
+    margin: 0px;
+}
+
+main article section a {
+    color: #AD52AB;
+    outline: none;
+    text-decoration: none;
+}
+
+main article section > a + a {
+    margin-left: 16px;
+}
+
+main article section a:focus-visible {
+    text-decoration: underline;
+}
+
+main article section a:hover {
+    text-decoration: underline;
+}
+
+main article section figure {
+    margin: 8px 0px;
+}
+
+main article section figure + figure, main article section figure + figure img {
+    margin-top: 0px;
+}
+
+main article section figure img {
+    margin: 8px;
+    vertical-align: top;
+}
+
+main article section h3 {
+    color: #272727;
+    font-size: 36px;
+    text-align: center;
+}
+
+main article section p {
+    color: #525252;
+    text-indent: 32px;
+}
