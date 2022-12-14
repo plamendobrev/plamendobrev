@@ -1,3 +1,8 @@
+#introducing-letters-article section figure img {
+    height: 96px;
+    width: auto;
+}
+
 #words-speak-volumes-article section div {
     background: url("https://www.plamendobrev.com/public/assets/images/words-speak-volumes-text.svg");
     display: none;
@@ -81,6 +86,7 @@ main article section a:hover {
 
 main article section figure {
     margin: 8px 0px;
+    text-align: center;
 }
 
 main article section figure + figure, main article section figure + figure img {
