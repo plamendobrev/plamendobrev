@@ -133,6 +133,10 @@ span.books {
     font-weight: 600;
 }
 
+h3 span.nemalp, h3 span.words-speak-volumes, h3 span.letters, h3 span.books {
+    font-weight: 500;
+}
+
 @media screen and (max-width: 512px) {
     #words-speak-volumes-article section div {
         background-size: auto 42px !important;
