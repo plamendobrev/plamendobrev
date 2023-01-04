@@ -59,7 +59,7 @@ main article section a, main article section figure img, main article section h3
 }
 
 main article section a, main article section figure img, main article section p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 main article section a, main article section h3, main article section p {
@@ -100,7 +100,7 @@ main article section figure img {
 
 main article section h3 {
     color: #272727;
-    font-size: 38px;
+    font-size: 36px;
     text-align: center;
 }
 
