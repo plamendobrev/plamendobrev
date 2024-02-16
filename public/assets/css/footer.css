@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    padding: 36px;
+}
+
+footer a {
+    border: none;
+    background: none;
+    padding: 0px;
+    margin: 12px;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+footer a img {
+    height: 42px;
+    vertical-align: middle;
+}
+
+footer a:focus-visible {
+    transform: scale(1.1);
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}

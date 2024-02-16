@@ -1,0 +1,125 @@
+* {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-family: "Jost";
+    font-weight: 700;
+}
+
+html body {
+    background: #ffa2b0;
+    margin: 0px;
+}
+
+h3, p {
+    margin: 16px;
+    cursor: default;
+    word-break: break-word;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #F33A6A;
+    font-size: 28pt;
+    text-align: center;
+}
+
+p {
+    color: #bf0c3a;
+    font-size: 20pt;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px;
+    position: relative;
+    text-indent: 64px;
+}
+
+main article {
+    display: grid;
+    opacity: 0;
+    animation: expand 0.3s forwards, fade-in 0.2s 0.3s forwards;
+}
+
+main article .wrapper {
+    overflow: hidden;
+}
+
+main article .wrapper section {
+    padding: 36px;
+}
+
+main article .wrapper section div {
+    margin-bottom: 72px;
+}
+
+main article .wrapper section div:last-child {
+    margin-bottom: 0px;
+}
+
+#home-article .wrapper section:nth-child(1) figure {
+    transform: scale(0);
+    animation: playgrounds-logo-pop 0.45s 0.2s forwards;
+    background: url("../images/playgrounds-logo-blob-background.png");
+    background-size: 100% 100%;
+    padding: 96px;
+    border-radius: 32px;
+    width: fit-content;
+    margin: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: padding 0.2s;
+}
+
+#home-article .wrapper section:nth-child(1) img {
+    user-select: none;
+    width: 100%;
+    max-width: 512px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 576px) {
+    #home-article .wrapper section:nth-child(1) figure {
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    #home-article .wrapper section:nth-child(1) figure {
+        padding: 64px;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    #home-article .wrapper section:nth-child(1) figure {
+        padding: 48px;
+    }
+}
+
+#about-article .wrapper section {
+    position: relative;
+}
+
+#about-article .wrapper section:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-article .wrapper section:nth-child(1) > div:nth-child(1) {
+    text-align: center;
+}
+
+#about-article .wrapper section:nth-child(1) img {
+    max-width: 512px;
+    width: 100%;
+    border-radius: 32px;
+    transform: translateX(calc(-100vw)) rotate(-90deg);
+    animation: about-article-portrait-fly-in 0.5s 0.2s forwards;
+}
+
+@media only screen and (max-width: 1024px) {
+    #about-article .wrapper section:nth-child(1) {
+        display: block;
+    }
+}

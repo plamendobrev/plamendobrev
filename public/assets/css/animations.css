@@ -1,0 +1,54 @@
+@-webkit-keyframes expand {
+    from { grid-template-rows: 0fr; }
+    to { grid-template-rows: 1fr; }
+}
+
+@keyframes expand {
+    from { grid-template-rows: 0fr; }
+    to { grid-template-rows: 1fr; }
+}
+
+@-webkit-keyframes shrink {
+    from { grid-template-rows: 1fr; }
+    to { grid-template-rows: 0fr; }
+}
+
+@keyframes shrink {
+    from { grid-template-rows: 1fr; }
+    to { grid-template-rows: 0fr; }
+}
+
+@-webkit-keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@-webkit-keyframes about-article-portrait-fly-in {
+    from { transform: translateX(calc(-100vw)) rotate(-90deg); }
+    to { transform: rotate(4deg); }
+}
+
+@keyframes about-article-portrait-fly-in {
+    from { transform: translateX(calc(-100vw)) rotate(-90deg); }
+    to { transform: rotate(4deg); }
+}
+
+@keyframes playgrounds-logo-pop {
+    70% { transform: scale(1.15); }
+    100% { transform: none; }
+}

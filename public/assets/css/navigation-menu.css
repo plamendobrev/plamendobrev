@@ -1,0 +1,56 @@
+nav {
+    cursor: default;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 16px;
+    display: inline-block;
+}
+
+nav ul li button {
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20pt;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+nav ul li button::before {
+    content: "";
+    background: #FFF;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: width 0.2s, color 0.2s;
+    width: 0px;
+}
+
+nav ul li button:focus::before, nav ul li button:hover::before, nav ul li button.selected::before {
+    width: 100%;
+}
+
+nav ul li button.selected {
+    color: #F33A6A;
+    pointer-events: none;
+}
+
+nav ul li button.selected::before {
+    background: #F33A6A;
+}
