@@ -46,7 +46,7 @@ for (let i = 0; i < document.querySelectorAll("nav ul li button").length; i++) {
                             <section>
                                 <div>
                                     <h3>But wait!</h3>
-                                    <p>What about my hobbies? What about my favourite type of music? What about my favourite colour? What about my proficiency in coding?</p>
+                                    <p>What about my hobbies? What about my favourite type of music? What about my favourite colour?</p>
                                     <p>Fine…</p>
                                     <p>Let’s do it!</p>
                                 </div>

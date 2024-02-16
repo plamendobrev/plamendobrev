@@ -10,6 +10,8 @@
 html body {
     background: #ffa2b0;
     margin: 0px;
+    min-width: 256px;
+    width: 100%;
 }
 
 h3, p {
@@ -58,7 +60,7 @@ main article .wrapper section div:last-child {
     margin-bottom: 0px;
 }
 
-#home-article .wrapper section:nth-child(1) figure {
+#home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
     transform: scale(0);
     animation: playgrounds-logo-pop 0.45s 0.2s forwards;
     background: url("../images/playgrounds-logo-blob-background.png");
@@ -72,27 +74,36 @@ main article .wrapper section div:last-child {
     transition: padding 0.2s;
 }
 
-#home-article .wrapper section:nth-child(1) img {
+#home-article .wrapper section:nth-child(1) div:nth-child(1) figure img {
     user-select: none;
     width: 100%;
     max-width: 512px;
     vertical-align: middle;
 }
 
+#home-article .wrapper section:nth-child(1) div:nth-child(3) figure {
+    text-align: center;
+}
+
+#home-article .wrapper section:nth-child(1) div:nth-child(3) figure img {
+    image-rendering: pixelated;
+    height: 128px;
+}
+
 @media only screen and (max-width: 576px) {
-    #home-article .wrapper section:nth-child(1) figure {
+    #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
         padding: 80px;
     }
 }
 
 @media only screen and (max-width: 512px) {
-    #home-article .wrapper section:nth-child(1) figure {
+    #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
         padding: 64px;
     }
 }
 
 @media only screen and (max-width: 448px) {
-    #home-article .wrapper section:nth-child(1) figure {
+    #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
         padding: 48px;
     }
 }
@@ -110,7 +121,11 @@ main article .wrapper section div:last-child {
     text-align: center;
 }
 
-#about-article .wrapper section:nth-child(1) img {
+#about-article .wrapper section:nth-child(1) figure {
+    margin: 0px 48px;
+}
+
+#about-article .wrapper section:nth-child(1) figure img {
     max-width: 512px;
     width: 100%;
     border-radius: 32px;
@@ -121,5 +136,9 @@ main article .wrapper section div:last-child {
 @media only screen and (max-width: 1024px) {
     #about-article .wrapper section:nth-child(1) {
         display: block;
+    }
+
+    #about-article .wrapper section:nth-child(1) figure {
+        margin: 0px;
     }
 }
