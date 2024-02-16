@@ -108,6 +108,12 @@ main article .wrapper section div:last-child {
     }
 }
 
+@media only screen and (max-width: 278px) {
+    #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
+        padding: 32px;
+    }
+}
+
 #about-article .wrapper section {
     position: relative;
 }
