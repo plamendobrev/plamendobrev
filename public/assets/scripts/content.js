@@ -72,7 +72,7 @@ for (let i = 0; i < document.querySelectorAll("nav ul li button").length; i++) {
                             <section>
                                 <div>
                                     <h3>Favorite Color</h3>
-                                    <p>They are many! But one of them is kind of obvious!</p>
+                                    <p>It isn’t just one! But one of them is kind of obvious!</p>
                                 </div>
                             </section>
                         </div>
