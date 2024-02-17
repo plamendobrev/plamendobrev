@@ -25,6 +25,7 @@ h3 {
     color: #F33A6A;
     font-size: 28pt;
     text-align: center;
+    transition: font-size 0.2s;
 }
 
 p {
@@ -36,6 +37,7 @@ p {
     padding: 0px;
     position: relative;
     text-indent: 64px;
+    transition: font-size 0.2s;
 }
 
 main article {
@@ -63,9 +65,8 @@ main article .wrapper section div:last-child {
 #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
     transform: scale(0);
     animation: playgrounds-logo-pop 0.45s 0.2s forwards;
-    background: url("../images/playgrounds-logo-blob-background.png");
-    background-size: 100% 100%;
-    padding: 96px;
+    background: #FFF;
+    padding: 64px;
     border-radius: 32px;
     width: fit-content;
     margin: auto;
@@ -92,25 +93,25 @@ main article .wrapper section div:last-child {
 
 @media only screen and (max-width: 576px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 80px;
+        padding: 48px;
     }
 }
 
 @media only screen and (max-width: 512px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 64px;
+        padding: 36px;
     }
 }
 
 @media only screen and (max-width: 448px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 48px;
+        padding: 24px;
     }
 }
 
 @media only screen and (max-width: 284px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 32px;
+        padding: 16px;
     }
 }
 
@@ -146,5 +147,25 @@ main article .wrapper section div:last-child {
 
     #about-article .wrapper section:nth-child(1) figure {
         margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h3 {
+        font-size: 24pt;
+    }
+    
+    p {
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    h3 {
+        font-size: 22pt;
+    }
+    
+    p {
+        font-size: 14pt;
     }
 }

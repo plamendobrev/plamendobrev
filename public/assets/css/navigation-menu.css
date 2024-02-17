@@ -24,6 +24,7 @@ nav ul li button {
     padding: 0px;
     position: relative;
     cursor: pointer;
+    transition: font-size 0.2s;
 }
 
 nav ul li button:disabled {
@@ -53,4 +54,16 @@ nav ul li button.selected {
 
 nav ul li button.selected::before {
     background: #F33A6A;
+}
+
+@media only screen and (max-width: 576px) {
+    nav ul li button {
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    nav ul li button {
+        font-size: 14pt;
+    }
 }
