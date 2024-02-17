@@ -93,25 +93,25 @@ main article .wrapper section div:last-child {
 
 @media only screen and (max-width: 576px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 48px;
+        padding: 56px;
     }
 }
 
 @media only screen and (max-width: 512px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 36px;
+        padding: 48px;
     }
 }
 
 @media only screen and (max-width: 448px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 24px;
+        padding: 40px;
     }
 }
 
 @media only screen and (max-width: 284px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 16px;
+        padding: 32px;
     }
 }
 
