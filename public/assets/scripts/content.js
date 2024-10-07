@@ -66,7 +66,7 @@ for (let i = 0; i < document.querySelectorAll("nav ul li button").length; i++) {
                             <section>
                                 <div>
                                     <h3>Music</h3>
-                                    <p>In my work, I actually draw significant inspiration from music, particularly pop and hip-hop genres. Some of my favorite artists include Madonna, Britney Spears, Miley Cyrus, Nicki Minaj, and of course, my dear love AD-22. 💗</p>
+                                    <p>In my work, I actually draw significant inspiration from music, particularly pop and hip-hop genres. Some of my favorite artists include Madonna, Britney Spears, Miley Cyrus, Nicki Minaj.</p>
                                 </div>
                             </section>
                             <section>
