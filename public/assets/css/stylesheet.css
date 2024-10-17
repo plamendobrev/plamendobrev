@@ -14,7 +14,7 @@ html body {
     width: 100%;
 }
 
-h3, p {
+h3, p, blockquote {
     margin: 16px;
     cursor: default;
     word-break: break-word;
@@ -28,8 +28,7 @@ h3 {
     transition: font-size 0.2s;
 }
 
-p {
-    color: #bf0c3a;
+p, blockquote {
     font-size: 20pt;
     border: none;
     background: none;
@@ -38,6 +37,41 @@ p {
     position: relative;
     text-indent: 64px;
     transition: font-size 0.2s;
+}
+
+p {
+    color: #bf0c3a;
+}
+
+blockquote {
+    color: #F33A6A;
+    font-style: italic;
+}
+
+a {
+    color: #F33A6A;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+}
+
+main a::before {
+    content: "";
+    background: #F33A6A;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: width 0.2s, color 0.2s;
+    width: 0px;
+}
+
+main a:focus-visible::before {
+    width: 100%;
+}
+
+main a:hover::before {
+    width: 100%;
 }
 
 main article {
@@ -50,68 +84,165 @@ main article .wrapper {
     overflow: hidden;
 }
 
-main article .wrapper section {
-    padding: 36px;
+main article .wrapper section div {
+    margin: 36px 36px 72px 36px;
 }
 
-main article .wrapper section div {
+main article .wrapper section div > div {
+    margin: 0px;
     margin-bottom: 72px;
 }
 
-main article .wrapper section div:last-child {
+main article .wrapper section div > div:last-child {
+    margin-bottom: 0px;
+}
+
+main article .wrapper section:last-child div:last-child {
     margin-bottom: 0px;
 }
 
 #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
     transform: scale(0);
-    animation: playgrounds-logo-pop 0.45s 0.2s forwards;
-    background: #FFF;
-    padding: 64px;
+    animation: pop-small 0.45s 0.2s forwards;
+    padding: 90px 64px;
+    transition: padding 0.2s, border-radius 0.2s;
+    text-align: center;
+    background: #fff;
     border-radius: 32px;
-    width: fit-content;
+    max-width: 640px;
     margin: auto;
-    max-width: 100%;
-    box-sizing: border-box;
-    transition: padding 0.2s;
 }
 
 #home-article .wrapper section:nth-child(1) div:nth-child(1) figure img {
+    transform: scale(0);
+    animation: pop 0.45s 0.65s forwards;
     user-select: none;
     width: 100%;
     max-width: 512px;
     vertical-align: middle;
 }
 
-#home-article .wrapper section:nth-child(1) div:nth-child(3) figure {
-    text-align: center;
+#playgrounds-screenshots figure {
+    margin: 32px auto;
 }
 
-#home-article .wrapper section:nth-child(1) div:nth-child(3) figure img {
-    image-rendering: pixelated;
-    height: 128px;
+#playgrounds-screenshots figure:nth-child(1) {
+    margin-top: 0px !important;
+}
+
+#playgrounds-screenshots figure:last-child {
+    margin-bottom: 0px !important;
+}
+
+#playgrounds-screenshots img {
+    display: block;
+    margin: auto;
+    border-radius: 32px;
+    max-width: 900px;
+    width: 100%;
+    height: auto !important;
+    user-select: none;
+    transform: scale(0);
+    transition: border-radius 0.2s, margin 0.2s;
+}
+
+#playgrounds-screenshots figure img[data-is-in-viewport="true"] {
+    animation: pop-small 0.45s forwards;
+}
+
+#home-article .wrapper section:nth-child(1) div:nth-child(4) p:last-child {
+    text-indent: 0px;
+    padding-left: 64px;
 }
 
 @media only screen and (max-width: 576px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 56px;
+        padding: 78px 52px;
+        border-radius: 28px;
+    }
+
+    #playgrounds-screenshots figure {
+        margin: 28px;
+    }
+
+    #playgrounds-screenshots img {
+        border-radius: 28px;
+    }
+
+    #home-article .wrapper section:nth-child(1) div:nth-child(4) p:last-child {
+        padding-left: 58px;
     }
 }
 
 @media only screen and (max-width: 512px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 48px;
+        padding: 66px 44px;
+        border-radius: 24px;
+    }
+
+    #home-article .wrapper section:nth-child(1) div:nth-child(1) figure img {
+        animation: pop-small 0.45s 0.65s forwards;
+    }
+
+    #playgrounds-screenshots figure {
+        margin: 24px;
+    }
+
+    #playgrounds-screenshots img {
+        border-radius: 24px;
+    }
+
+    #home-article .wrapper section:nth-child(1) div:nth-child(4) p:last-child {
+        padding-left: 52px;
     }
 }
 
 @media only screen and (max-width: 448px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 40px;
+        padding: 54px 36px;
+        border-radius: 20px;
+    }
+
+    #playgrounds-screenshots figure {
+        margin: 20px;
+    }
+
+    #playgrounds-screenshots img {
+        border-radius: 20px;
+    }
+
+    #home-article .wrapper section:nth-child(1) div:nth-child(4) p:last-child {
+        padding-left: 46px;
     }
 }
 
-@media only screen and (max-width: 284px) {
+@media only screen and (max-width: 320px) {
+    #playgrounds-screenshots figure {
+        margin: 18px;
+    }
+
+    #playgrounds-screenshots img {
+        border-radius: 20px;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 288px) {
     #home-article .wrapper section:nth-child(1) div:nth-child(1) figure {
-        padding: 32px;
+        padding: 46px 28px;
+        border-radius: 16px;
+    }
+
+    #playgrounds-screenshots figure {
+        margin: 16px;
+    }
+
+    #playgrounds-screenshots img {
+        border-radius: 16px;
+    }
+
+    #home-article .wrapper section:nth-child(1) div:nth-child(4) p:last-child {
+        padding-left: 40px;
     }
 }
 
@@ -138,6 +269,7 @@ main article .wrapper section div:last-child {
     border-radius: 32px;
     transform: translateX(calc(-100vw)) rotate(-90deg);
     animation: about-article-portrait-fly-in 0.5s 0.2s forwards;
+    transition: max-width 0.2s;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -150,22 +282,133 @@ main article .wrapper section div:last-child {
     }
 }
 
+@media only screen and (max-width: 640px) {
+    #about-article .wrapper section:nth-child(1) figure img {
+        max-width: 448px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
+    #about-article .wrapper section:nth-child(1) figure img {
+        max-width: 384px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    #about-article .wrapper section:nth-child(1) figure img {
+        max-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    #about-article .wrapper section:nth-child(1) figure img {
+        max-width: 256px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    #about-article .wrapper section:nth-child(1) figure img {
+        max-width: 224px;
+    }
+}
+
+@media only screen and (max-width: 288px) {
+    #about-article .wrapper section:nth-child(1) figure img {
+        max-width: 192px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h3, p {
+        margin: 14px;
+    }
+
     h3 {
         font-size: 24pt;
+    }
+
+    p, blockquote {
+        text-indent: 58px;
     }
     
     p {
         font-size: 16pt;
     }
+
+    main article .wrapper section div {
+        margin: 28px 28px 40px 28px;
+    }
+
+    main article .wrapper section div > div {
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 448px) {
+    h3, p, blockquote {
+        margin: 12px;
+    }
+
     h3 {
         font-size: 22pt;
     }
     
-    p {
+    p, blockquote {
         font-size: 14pt;
+        text-indent: 52px;
+    }
+
+    main article .wrapper section div {
+        margin: 24px 24px 38px 24px;
+    }
+
+    main article .wrapper section div > div {
+        margin-bottom: 38px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    h3, p, blockquote {
+        margin: 11px;
+    }
+
+    h3 {
+        font-size: 20pt;
+    }
+    
+    p, blockquote {
+        font-size: 13pt;
+        text-indent: 46px;
+    }
+
+    main article .wrapper section div {
+        margin: 22px 22px 36px 22px;
+    }
+
+    main article .wrapper section div > div {
+        margin-bottom: 36px;
+    }
+}
+
+@media only screen and (max-width: 288px) {
+    h3, p, blockquote {
+        margin: 10px;
+    }
+
+    h3 {
+        font-size: 18pt;
+    }
+    
+    p, blockquote {
+        font-size: 12pt;
+        text-indent: 40px;
+    }
+
+    main article .wrapper section div {
+        margin: 20px 20px 34px 20px;
+    }
+
+    main article .wrapper section div > div {
+        margin-bottom: 34px;
     }
 }

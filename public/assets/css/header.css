@@ -9,7 +9,6 @@ header h1 {
     font-size: 96pt;
     text-shadow: #F33A6A 12px 12px;
     text-align: center;
-    margin: 12px;
     margin: 32px 48px;
     transition: font-size 0.2s, text-shadow 0.2s;
 }
@@ -18,6 +17,7 @@ header h1 {
     header h1 {
         font-size: 80pt;
         text-shadow: #F33A6A 10px 10px;
+        margin: 28px 44px;
     }
 }
 
@@ -25,6 +25,7 @@ header h1 {
     header h1 {
         font-size: 64pt;
         text-shadow: #F33A6A 8px 8px;
+        margin: 24px 40px;
     }
 }
 
@@ -32,12 +33,22 @@ header h1 {
     header h1 {
         font-size: 48pt;
         text-shadow: #F33A6A 6px 6px;
+        margin: 20px 36px;
     }
 }
 
-@media only screen and (max-width: 384px) {
+@media only screen and (max-width: 368px) {
+    header h1 {
+        font-size: 40pt;
+        text-shadow: #F33A6A 5px 5px;
+        margin: 18px 34px;
+    }
+}
+
+@media only screen and (max-width: 288px) {
     header h1 {
         font-size: 32pt;
         text-shadow: #F33A6A 4px 4px;
+        margin: 16px 32px;
     }
 }

@@ -6,6 +6,7 @@ nav ul {
     list-style-type: none;
     padding: 0px;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -57,13 +58,41 @@ nav ul li button.selected::before {
 }
 
 @media only screen and (max-width: 576px) {
+    nav ul li {
+        margin: 14px;
+    }
+
     nav ul li button {
         font-size: 16pt;
     }
 }
 
 @media only screen and (max-width: 448px) {
+    nav ul li {
+        margin: 12px;
+    }
+
     nav ul li button {
         font-size: 14pt;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    nav ul li {
+        margin: 11px;
+    }
+
+    nav ul li button {
+        font-size: 13pt;
+    }
+}
+
+@media only screen and (max-width: 288px) {
+    nav ul li {
+        margin: 10px;
+    }
+
+    nav ul li button {
+        font-size: 12pt;
     }
 }

@@ -1,7 +1,7 @@
 footer {
     display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 36px;
 }
 
@@ -11,12 +11,13 @@ footer a {
     padding: 0px;
     margin: 12px;
     outline: none;
-    transition: transform 0.2s;
+    transition: transform 0.2s, margin 0.2s;
 }
 
 footer a img {
     height: 42px;
     vertical-align: middle;
+    transition: height 0.2s;
 }
 
 footer a:focus-visible {
@@ -25,4 +26,46 @@ footer a:focus-visible {
 
 footer a:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 576px) {
+    footer a {
+        margin: 11px;
+    }
+
+    footer a img {
+        height: 36px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    footer a img {
+        height: 34px;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    footer a {
+        margin: 10px;
+    }
+
+    footer a img {
+        height: 32px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    footer a img {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 288px) {
+    footer a {
+        margin: 9px;
+    }
+
+    footer a img {
+        height: 28px;
+    }
 }

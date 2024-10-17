@@ -48,7 +48,12 @@
     to { transform: rotate(4deg); }
 }
 
-@keyframes playgrounds-logo-pop {
+@keyframes pop {
     70% { transform: scale(1.15); }
+    100% { transform: none; }
+}
+
+@keyframes pop-small {
+    70% { transform: scale(1.05); }
     100% { transform: none; }
 }

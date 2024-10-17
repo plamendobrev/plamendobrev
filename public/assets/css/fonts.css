@@ -3,3 +3,9 @@
     src: url("../fonts/Gnomon*-Web.ttf") format("truetype");
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Lemon Tuesday";
+    src: url("../fonts/Lemon\ Tuesday.otf") format("opentype");
+    font-style: normal;
+}
